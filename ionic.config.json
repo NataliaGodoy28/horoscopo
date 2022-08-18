@@ -1,0 +1,7 @@
+{
+  "name": "horoscopo",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
