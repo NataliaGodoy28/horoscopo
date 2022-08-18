@@ -8,5 +8,11 @@
 </ion-header>
 
 <ion-content>
-
+  <h2 *ngIf="signo">{{signo}}</h2>
+  <p *ngIf="data">{{data.description}}</p>
+  <p *ngIf="data"><strong> Date Range:</strong>{{data.date_range}} <br>
+    <strong> Compatibility: </strong>{{data.compatibility}} <br>
+    <strong> Mood: </strong>{{data.mood}}&nbsp; <strong> Color: </strong>{{data.color}} <br>
+    <strong> Lucky Number: </strong>{{data.lucky_number}}
+  </p>
 </ion-content>
