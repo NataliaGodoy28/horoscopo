@@ -1,27 +1,42 @@
-#container {
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*{
+  padding:0;
+  margin:0;
+  font-family: 'Great Vibes', cursive;
+  color: black;
+}
+
+.fondo{
+  background-image: url("/assets/signos/fondo.jpg");
+  min-height: 100%;
+}
+
+.signos{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.signo{
+  width:30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.459);
+  border-radius: 50px;
+}
+
+.signo>img{
+  height: 80px;
+}
+
+h1{
+  line-height: 4rem;
+  font-weight: bolder;
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  font-size: 2.0rem;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}

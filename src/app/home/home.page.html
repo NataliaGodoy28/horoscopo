@@ -1,20 +1,64 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Horoscopo
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="fondo">
+    <h1>Horoscopo Né</h1>
+    <div class="signos">
+      <div class="signo">
+        <img src="/assets/signos/aries.png" alt="Aries" (click)="verSigno('aries')">
+        <p>Aries</p>
+      </div>
+      <div class="signo">
+        <img src="/assets/signos/tauro.png" alt="Tauro" (click)="verSigno('taurus')">
+        <p>Taurus</p>
+      </div>
+      <div class="signo">
+        <img src="/assets/signos/geminis.png" alt="Geminis" (click)="verSigno('geminis')">
+        <p>Gemini</p>
+      </div>
+      <div class="signo">
+        <img src="/assets/signos/cancer.png" alt="Cancer" (click)="verSigno('cancer')">
+        <p>Cancer</p>
+      </div>
+      <div class="signo">
+        <img src="/assets/signos/leo.png" alt="Leo" (click)="verSigno('leo')">
+        <p>Leo</p>
+      </div>
+      <div class="signo">
+        <img src="/assets/signos/virgo.png" alt="Virgo" (click)="verSigno('virgo')">
+        <p>Virgo</p>
+      </div>
+      <div class="signo">
+        <img src="/assets/signos/libra.png" alt="Libra" (click)="verSigno('libra')">
+        <p>Libra</p>
+      </div>
+      <div class="signo">
+        <img src="/assets/signos/escorpion.png" alt="Escorpion" (click)="verSigno('escorpion')">
+        <p>Scorpio</p>
+      </div>
+      <div class="signo">
+        <img src="/assets/signos/sagitario.png" alt="Sagitario" (click)="verSigno('sagittarius')">
+        <p>Sagitario</p>
+      </div>
+      <div class="signo">
+        <img src="/assets/signos/capricornio.png" alt="Capricornio" (click)="verSigno('capricorn')">
+        <p>Capricornio</p>
+      </div>
+      <div class="signo">
+        <img src="/assets/signos/aquario.png" alt="Acuario" (click)="verSigno('aquarius')">
+        <p>Acuario</p>
+      </div>
+      <div class="signo">
+        <img src="/assets/signos/picis.png" alt="Picis" (click)="verSigno('pisces')">
+        <p>Picis</p>
+      </div>
+    </div>
   </div>
 </ion-content>
+

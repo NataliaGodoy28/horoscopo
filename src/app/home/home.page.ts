@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,14 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private router: Router) {}
+
+  verSigno(signo: string){
+    const extras: NavigationExtras={
+      state : {signo}
+    };
+    this.router.navigate(['/signo'], extras);
+
+  }
 
 }
